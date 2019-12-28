@@ -7,7 +7,9 @@ class Restaurants extends React.Component {
         return (
             <div class="container">
                 <div class="row">
-                    
+                    <div className="Restaurant1">
+                        <img />
+                    </div>
 
                 </div>
             </div>
