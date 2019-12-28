@@ -5,8 +5,13 @@ class Restaurants extends React.Component {
 
     render() {
         return (
-            
-                <Restaurants />
+            <div class="container">
+                <div class="row">
+                    
+
+                </div>
+            </div>
+         
         );
     }
 }
