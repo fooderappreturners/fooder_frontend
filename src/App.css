@@ -1,5 +1,7 @@
 #mainHeading {
     text-align: center;
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
   }
 
   p {
@@ -8,4 +10,18 @@
 
 .btn btn-primary btn-lg {
   align-items: center;
+}
+body {
+  background-color: #9dab86;
+}
+img {
+  width: 40%;
+  text-align: left;
+}
+#restaurantchoice {
+  background-color: #e6a157;
+  border-color: #e6a157;
+}
+#dietary-checkbox {
+  
 }
