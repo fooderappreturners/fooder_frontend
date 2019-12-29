@@ -1,9 +1,9 @@
 import React from 'react';
-import vegan from './vegan.jpeg';
-import hala from './hala.jpeg';
-import glutenfree from './glutenfree.png';
-import vegetarian from './vegetarian.jpeg';
-import pesca from './pesca.png';
+import vegan from './images/vegan.jpeg';
+import hala from './images/hala.jpeg';
+import glutenfree from './images/glutenfree.png';
+import vegetarian from './images/vegetarian.jpeg';
+import pesca from './images/pesca.png';
 
 
 class Header extends React.Component {
