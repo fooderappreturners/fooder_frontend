@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
-import App from './App'
-import Booking from './Booking'
-import Restaurants from './Restaurants'
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import App from './App';
+import Booking from './Booking';
+import Restaurants from './Restaurants';
 
 const routing = (
     <Router>
@@ -20,3 +20,4 @@ ReactDOM.render(
 routing, 
     document.getElementById('root')
     );
+ 
