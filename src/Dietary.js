@@ -27,7 +27,6 @@ class Dietary extends React.Component {
                         <Checkbox img={vegetarian} name="vegatarian" title="Vegatarian" />
                     </div>
                 </div>
-                <button id="restaurantchoice" type="button" className="btn btn-primary btn-lg">Restaurant Options</button>
             </div>
         )
     };
