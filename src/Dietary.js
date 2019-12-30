@@ -24,7 +24,7 @@ class Dietary extends React.Component {
                         <Checkbox img={glutenfree} name="gluten_free" title="Gluten Free" />
                     </div>
                     <div className="col">
-                        <Checkbox img={vegetarian} name="vegatarian" title="Vegatarian" />
+                        <Checkbox img={vegetarian} name="vegetarian" title="Vegetarian" />
                     </div>
                 </div>
             </div>
