@@ -1,9 +1,10 @@
 import React from 'react';
-import restaurant1 from './images/restaurant1.jpeg'
-import salmon from './images/salmon.jpeg'
-import restaurant3 from './images/restaurant3.jpeg'
-import restaurant4 from './images/restaurant4.jpeg'
-import restaurant5 from './images/restaurant5.jpeg'
+import restaurant1 from './images/restaurant1.jpeg';
+import salmon from './images/salmon.jpeg';
+import restaurant3 from './images/restaurant3.jpeg';
+import restaurant4 from './images/restaurant4.jpeg';
+import restaurant5 from './images/restaurant5.jpeg';
+import './styles/Restaurants.css';
 
 
 class Restaurants extends React.Component {
@@ -11,9 +12,14 @@ class Restaurants extends React.Component {
     render() {
         return (
             <div class="container">
+                <br/>
+                <br/>
+                <h1 id="Heading">Restaurant Listing</h1>
+                <br/>
+                <br/>
                 <div class="row">
                     <div class="col-sm">
-                        <img src={restaurant1} width="300" height="200" alt='restaurant' />
+                        <img src={restaurant1} width="250" height="200" alt='restaurant' />
                     </div>
                     <div class="col">
                         <h3 id="heading">Vegan Paradise</h3>
@@ -23,9 +29,11 @@ class Restaurants extends React.Component {
                         <button type="button" class="btn btn-primary btn-lg">Book</button>
                     </div>
                 </div>
+                <br/>
+                <br/>
                 <div class="row">
                     <div class="col-sm">
-                        <img src={salmon} width="300" height="200" alt='restaurant' />
+                        <img src={salmon} width="250" height="200" alt='restaurant' />
                     </div>
                     <div class="col">
                         <h3 id="heading">Fish Frenzy</h3>
@@ -35,9 +43,11 @@ class Restaurants extends React.Component {
                         <button type="button" class="btn btn-primary btn-lg">Book</button>
                     </div>
                 </div>
+                <br/>
+                <br/>
                 <div class="row">
                     <div class="col-sm">
-                        <img src={restaurant3} width="300" height="200" alt='restaurant' />
+                        <img src={restaurant3} width="250" height="200" alt='restaurant' />
                     </div>
                     <div class="col">
                         <h3 id="heading">Vegetarian Vault</h3>
@@ -47,9 +57,11 @@ class Restaurants extends React.Component {
                         <button type="button" class="btn btn-primary btn-lg">Book</button>
                     </div>
                 </div>
+                <br/>
+                <br/>
                 <div class="row">
                     <div class="col-sm">
-                        <img src={restaurant4} width="300" height="200" alt='restaurant' />
+                        <img src={restaurant4} width="250" height="200" alt='restaurant' />
                     </div>
                     <div class="col">
                         <h3 id="heading">Halal Heaven</h3>
@@ -59,9 +71,11 @@ class Restaurants extends React.Component {
                         <button type="button" class="btn btn-primary btn-lg">Book</button>
                     </div>
                 </div>
+                <br/>
+                <br/>
                 <div class="row">
                     <div class="col-sm">
-                        <img src={restaurant5} width="300" height="200" alt='restaurant' />
+                        <img src={restaurant5} width="250" height="200" alt='restaurant' />
                     </div>
                     <div class="col">
                         <h3 id="heading">Gluten-Free Gastro</h3>

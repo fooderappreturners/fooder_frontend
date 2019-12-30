@@ -2,7 +2,7 @@ import React from 'react';
 import Booking from './Booking';
 import Header from './Header';
 import Restaurants from './Restaurants';
-import "./App.css";
+import "./styles/App.css";
 
 
 class App extends React.Component {
