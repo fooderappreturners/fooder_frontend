@@ -4,18 +4,16 @@
     font-family: 'Open Sans', sans-serif;
   }
 
-  p {
-    text-align: center;
-  }
-
-.btn btn-primary btn-lg {
-  align-items: center;
+p {
+  text-align: center;
 }
+
 body {
   background-color: #9dab86;
   font-family: 'Open Sans', sans-serif;
-
+  color: rgb(34, 32, 32);
 }
+
 img {
   width: 40%;
   text-align: left;
