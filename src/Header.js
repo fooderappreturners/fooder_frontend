@@ -8,8 +8,7 @@ import './styles/Header.css';
 
 
 class Header extends React.Component {
-
-render() {
+  render() {
     return (
   <div>
   <h1 id="mainHeading">FOODERS</h1>
@@ -73,3 +72,4 @@ render() {
  )};
 }
 export default Header;
+

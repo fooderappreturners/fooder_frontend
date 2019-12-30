@@ -12,11 +12,11 @@ class Restaurants extends React.Component {
     render() {
         return (
             <div class="container">
-                <br/>
-                <br/>
+                <br />
+                <br />
                 <h1 id="Heading">Restaurant Listing</h1>
-                <br/>
-                <br/>
+                <br />
+                <br />
                 <div class="row">
                     <div class="col-sm">
                         <img src={restaurant1} width="250" height="200" alt='restaurant' />
@@ -29,8 +29,8 @@ class Restaurants extends React.Component {
                         <button type="button" class="btn btn-primary btn-lg">Book</button>
                     </div>
                 </div>
-                <br/>
-                <br/>
+                <br />
+                <br />
                 <div class="row">
                     <div class="col-sm">
                         <img src={salmon} width="250" height="200" alt='restaurant' />
@@ -43,8 +43,8 @@ class Restaurants extends React.Component {
                         <button type="button" class="btn btn-primary btn-lg">Book</button>
                     </div>
                 </div>
-                <br/>
-                <br/>
+                <br />
+                <br />
                 <div class="row">
                     <div class="col-sm">
                         <img src={restaurant3} width="250" height="200" alt='restaurant' />
@@ -57,8 +57,8 @@ class Restaurants extends React.Component {
                         <button type="button" class="btn btn-primary btn-lg">Book</button>
                     </div>
                 </div>
-                <br/>
-                <br/>
+                <br />
+                <br />
                 <div class="row">
                     <div class="col-sm">
                         <img src={restaurant4} width="250" height="200" alt='restaurant' />
@@ -71,8 +71,8 @@ class Restaurants extends React.Component {
                         <button type="button" class="btn btn-primary btn-lg">Book</button>
                     </div>
                 </div>
-                <br/>
-                <br/>
+                <br />
+                <br />
                 <div class="row">
                     <div class="col-sm">
                         <img src={restaurant5} width="250" height="200" alt='restaurant' />
