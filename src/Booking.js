@@ -6,12 +6,9 @@ class Booking extends React.Component {
 
     render() {
         return (
-            <div class="container">
-                <br/>
-                <br/>
-                <br/>
+            <div className="container">
                 <h1 id="Heading">Booking Confirmation</h1>
-                <div class="row confirm">
+                <div className="row confirm">
                     <img src={greenTick} width="300" height="400" alt="big tick" />
                 </div>
             </div>
