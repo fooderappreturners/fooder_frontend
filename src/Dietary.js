@@ -7,6 +7,24 @@ import vegetarian from './images/vegetarian.png';
 import pesca from './images/pesca.png';
 
 class Dietary extends React.Component {
+    state = {
+        dietaryChoice: "",
+    };
+
+    updateDietaryChoice = (event) => {
+        this.setState({
+            dietaryChoice: event.target.value
+        })
+    }
+
+    handleClick = (event) => {
+        event.preventDefault();
+        this.props.addDietary(this.state.dietaryChoice);
+        this.setState({
+            dietaryChoice: ""
+        });
+    }
+
     render() {
         return (
             <div className="container">
