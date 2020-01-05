@@ -55,7 +55,8 @@ class Dietary extends React.Component {
                                 <Checkbox
                                     clickFunc={this.updateDietaryChoice}
                                     img={this.state.images[value.name]}
-                                    value={value.id} name={value.name}
+                                    value={value.id}
+                                    name={value.name}
                                     title={this.titleCase(value.name)} />
                             </div>
                         )

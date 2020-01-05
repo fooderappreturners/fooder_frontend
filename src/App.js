@@ -12,8 +12,11 @@ const API_URL = "https://41cpd3sfbg.execute-api.eu-west-2.amazonaws.com/dev/";
 
 class App extends React.Component {
   state = {
-    dietaryOptions: []
+    dietaryOptions: [],
+    restaurants: [],
+    bookings: [],
   };
+  //access dietary options
   componentDidMount() {
     axios.get(`${API_URL}dietaryOptions`)
       .then((response) => {
@@ -24,12 +27,26 @@ class App extends React.Component {
       .catch((err) => {
         console.log("Error getting task data", err);
       });
+    this.restaurantAffiliates();
+  }
+  restaurantAffiliates = () => {
+    axios.get(`${API_URL}restaurants`)
+      .then((response) => {
+        this.setState({
+          restaurants: response.data.restaurants
+        });
+      })
+      .catch((err) => {
+        console.log("Error getting task data", err);
+      });
   }
 
+  //filter the restuarants with dietary options selected
   filterRestaurants = (options) => {
     console.log(options, 'options for api call');
     axios.get(`${API_URL}restaurants`) //need to add id prop
   }
+  //add a new booking 
   addNewBooking = () => {
     const bookingsCopy = this.state.bookings.slice();
     const newBooking = {
@@ -50,7 +67,7 @@ class App extends React.Component {
         console.log("Error creating task", err);
       })
   };
-
+  //get all bookings already in system
   bookings = () => {
     axios.get(`${API_URL}bookings`)
       .then((response) => {
@@ -63,7 +80,7 @@ class App extends React.Component {
         console.log("Error getting task data", err);
       });
   }
-
+  //delete booking 
   deleteTask = id => {
     axios.delete(`${API_URL}deleteBooking` + id)
       .then((response) => {
@@ -85,7 +102,8 @@ class App extends React.Component {
         <Dietary
           dietaryOptions={this.state.dietaryOptions}
           filterRestaurantsFunc={this.filterRestaurants} />
-        <Restaurants />
+        <Restaurants
+          restaurants={this.state.restaurants} />
         <Booking />
       </div>
     );
