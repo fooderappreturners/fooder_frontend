@@ -5,7 +5,6 @@ import Booking from './Booking';
 import Header from './Header';
 import Restaurants from './Restaurants';
 import Dietary from './Dietary';
-import Restfilter from './Restfilter';
 import "./styles/App.css";
 
 const API_URL = "https://41cpd3sfbg.execute-api.eu-west-2.amazonaws.com/dev/";
@@ -29,6 +28,7 @@ class App extends React.Component {
       });
     this.restaurantAffiliates();
   }
+  //access restaurants
   restaurantAffiliates = () => {
     axios.get(`${API_URL}restaurants`)
       .then((response) => {
@@ -40,11 +40,17 @@ class App extends React.Component {
         console.log("Error getting task data", err);
       });
   }
-
   //filter the restuarants with dietary options selected
-  filterRestaurants = (options) => {
-    console.log(options, 'options for api call');
-    axios.get(`${API_URL}restaurants`) //need to add id prop
+  filterRestaurants = (dietaryOptions) => {
+    axios.get(`${API_URL}restaurants/${dietaryOptions.slice(',')}`)
+      .then((response) => {
+        this.setState({
+          restaurants: response.data.restaurants
+        });
+      })
+      .catch((err) => {
+        console.log("Error getting task data", err);
+      });
   }
   //add a new booking 
   addNewBooking = () => {

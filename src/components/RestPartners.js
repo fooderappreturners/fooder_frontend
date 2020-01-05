@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/RestPartners.css'
 
 export default (props) => {
     const { id, name, capacity, location, description, phoneNumber } = props.restaurant;

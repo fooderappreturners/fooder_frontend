@@ -1,6 +1,5 @@
 import React from 'react';
 import Checkbox from './components/Checkbox'
-import RestFilter from './Restfilter';
 import vegan from './images/vegan.png';
 import halal from './images/halal.png';
 import glutenfree from './images/glutenfree.png';
@@ -26,17 +25,20 @@ class Dietary extends React.Component {
     }
 
     updateDietaryChoice = (event) => {
-        console.log(event.target.value, this.state.dietaryChoice);
+        event.persist();
+        const checked = event.target.checked;
+        const val = event.target.value;
         this.setState(state => {
             //manipulate dietarychoice here
-            state.dietaryChoice.splice()
-            state.dietaryChoice.push('woopdido')
-
-            return state;
+            //is the data checked or unchecked - need to splice or push
+            if (checked) {
+                return state.dietaryChoice.push(val)
+            } else {
+                return state.dietaryChoice.splice(state.dietaryChoice.indexOf(event.target.val), 1)
+            }
         });
-
-        console.log(this.state, 'the state')
     }
+
     titleCase(str) {
         const splitStr = str.toLowerCase().split(' ');
         for (let i = 0; i < splitStr.length; i++) {
@@ -61,11 +63,16 @@ class Dietary extends React.Component {
                             </div>
                         )
                     })}
-
                 </div>
-                <RestFilter
-                    options={this.state.dietaryChoice}
-                    restaurantFilter={this.props.filterRestaurantsFunc} />
+                <div className="container">
+                    <div className="row">
+                        <button
+                            onClick={() => this.props.filterRestaurantsFunc(this.state.dietaryChoice)}
+                            id="restaurantchoice"
+                            type="button"
+                            className="btn btn-primary btn-lg">Restaurant Options</button>
+                    </div>
+                </div>
             </div>
         )
     };
