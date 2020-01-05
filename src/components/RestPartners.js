@@ -5,13 +5,19 @@ export default (props) => {
     const { id, name, capacity, location, description, phoneNumber } = props.restaurant;
     const img = props.img;
     return (
-        <div className="restaurant">
-            <img src={img} alt={name} />
-            <h1>{name}</h1>
-            <p>Capacity: {capacity}</p>
-            <p>Location: {location}</p>
-            <p>{description}</p>
-            <a href={`tel:${phoneNumber}`} title={`Call us on: ${phoneNumber}`}>Tel: {phoneNumber}</a>
+        <div className="row restaurant">
+            <div className="col-4">
+                <div className="diningPlacesCol">
+                    <img className="restPic" src={img} alt={name} />
+                </div>
+            </div>
+            <div className="col-8">
+                <h1>{name}</h1>
+                <p className="desc">{description}</p>
+                <p className="address">Address: {location}</p>
+                <a className="number" href={`tel:${phoneNumber}`} title={`Call us on: ${phoneNumber}`}>Tel: {phoneNumber}</a>
+            </div>
+
         </div>
     )
 } 

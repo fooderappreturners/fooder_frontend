@@ -1,9 +1,9 @@
 import React from 'react';
-import restaurant1 from './images/restaurant1.jpeg';
-import restaurant2 from './images/salmon.jpeg';
-import restaurant3 from './images/restaurant3.jpeg';
-import restaurant4 from './images/restaurant4.jpeg';
-import restaurant5 from './images/restaurant5.jpeg';
+import restaurant1 from './images/restaurant1.png';
+import restaurant2 from './images/restaurant2.png';
+import restaurant3 from './images/restaurant3.png';
+import restaurant4 from './images/restaurant4.png';
+import restaurant5 from './images/restaurant5.png';
 import './styles/Restaurants.css';
 import RestPartners from './components/RestPartners';
 class Restaurants extends React.Component {
@@ -36,7 +36,7 @@ class Restaurants extends React.Component {
                 <div className="row">
                     {this.props.restaurants.map((restaurant) => {
                         return (
-                            <div className="col" key={restaurant.id}>
+                            <div key={restaurant.id}>
                                 <RestPartners
                                     img={this.state.images[restaurant.id]}
                                     restaurant={restaurant} />

@@ -15,7 +15,6 @@ class App extends React.Component {
     restaurants: [],
     bookings: [],
   };
-  //access dietary options
   componentDidMount() {
     axios.get(`${API_URL}dietaryOptions`)
       .then((response) => {
@@ -28,7 +27,6 @@ class App extends React.Component {
       });
     this.restaurantAffiliates();
   }
-  //access restaurants
   restaurantAffiliates = () => {
     axios.get(`${API_URL}restaurants`)
       .then((response) => {
@@ -40,7 +38,6 @@ class App extends React.Component {
         console.log("Error getting task data", err);
       });
   }
-  //filter the restuarants with dietary options selected
   filterRestaurants = (dietaryOptions) => {
     axios.get(`${API_URL}restaurants/${dietaryOptions.slice(',')}`)
       .then((response) => {

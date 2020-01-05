@@ -29,8 +29,6 @@ class Dietary extends React.Component {
         const checked = event.target.checked;
         const val = event.target.value;
         this.setState(state => {
-            //manipulate dietarychoice here
-            //is the data checked or unchecked - need to splice or push
             if (checked) {
                 return state.dietaryChoice.push(val)
             } else {
