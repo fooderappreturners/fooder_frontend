@@ -1,5 +1,6 @@
 import React from 'react';
 import Checkbox from './components/Checkbox'
+import RestFilter from './Restfilter';
 import vegan from './images/vegan.png';
 import halal from './images/halal.png';
 import glutenfree from './images/glutenfree.png';
@@ -8,43 +9,62 @@ import pesca from './images/pesca.png';
 
 class Dietary extends React.Component {
     state = {
-        dietaryChoice: "",
+        dietaryChoice: [],
+        images: []
     };
 
-    updateDietaryChoice = (event) => {
+    componentDidMount() {
         this.setState({
-            dietaryChoice: event.target.value
+            images: {
+                'vegan': vegan,
+                'halal': halal,
+                'gluten free': glutenfree,
+                'vegetarian': vegetarian,
+                'pescatarian': pesca
+            }
         })
     }
 
-    handleClick = (event) => {
-        event.preventDefault();
-        this.props.addDietary(this.state.dietaryChoice);
-        this.setState({
-            dietaryChoice: ""
+    updateDietaryChoice = (event) => {
+        console.log(event.target.value, this.state.dietaryChoice);
+        this.setState(state => {
+            //manipulate dietarychoice here
+            state.dietaryChoice.splice()
+            state.dietaryChoice.push('woopdido')
+
+            return state;
         });
+
+        console.log(this.state, 'the state')
+    }
+    titleCase(str) {
+        const splitStr = str.toLowerCase().split(' ');
+        for (let i = 0; i < splitStr.length; i++) {
+            splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+        }
+        return splitStr.join(' ');
     }
 
     render() {
         return (
             <div className="container">
                 <div className="row">
-                    <div className="col">
-                        <Checkbox img={halal} name="halal" title="Halal" />
-                    </div>
-                    <div className="col">
-                        <Checkbox img={vegan} name="vegan" title="Vegan" />
-                    </div>
-                    <div className="col">
-                        <Checkbox img={pesca} name="pescatarian" title="Pescatarian" />
-                    </div>
-                    <div className="col">
-                        <Checkbox img={glutenfree} name="gluten_free" title="Gluten Free" />
-                    </div>
-                    <div className="col">
-                        <Checkbox img={vegetarian} name="vegetarian" title="Vegetarian" />
-                    </div>
+                    {this.props.dietaryOptions.map((value, index) => {
+                        return (
+                            <div className="col" key={value.id}>
+                                <Checkbox
+                                    clickFunc={this.updateDietaryChoice}
+                                    img={this.state.images[value.name]}
+                                    value={value.id} name={value.name}
+                                    title={this.titleCase(value.name)} />
+                            </div>
+                        )
+                    })}
+
                 </div>
+                <RestFilter
+                    options={this.state.dietaryChoice}
+                    restaurantFilter={this.props.filterRestaurantsFunc} />
             </div>
         )
     };

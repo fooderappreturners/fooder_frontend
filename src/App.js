@@ -17,9 +17,8 @@ class App extends React.Component {
   componentDidMount() {
     axios.get(`${API_URL}dietaryOptions`)
       .then((response) => {
-        const dietaryOptions = response.data;
         this.setState({
-          dietaryOptions: dietaryOptions
+          dietaryOptions: response.data.dietaryOptions
         });
       })
       .catch((err) => {
@@ -27,11 +26,10 @@ class App extends React.Component {
       });
   }
 
-  filterRestaurants =
-    handleClick = (event) => {
-      event.preventDefault();
-      axios.get(`${API_URL}restaurants` + id)
-    }
+  filterRestaurants = (options) => {
+    console.log(options, 'options for api call');
+    axios.get(`${API_URL}restaurants`) //need to add id prop
+  }
   addNewBooking = () => {
     const bookingsCopy = this.state.bookings.slice();
     const newBooking = {
@@ -84,8 +82,9 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <Dietary />
-        <Restfilter />
+        <Dietary
+          dietaryOptions={this.state.dietaryOptions}
+          filterRestaurantsFunc={this.filterRestaurants} />
         <Restaurants />
         <Booking />
       </div>
