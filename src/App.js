@@ -5,6 +5,7 @@ import Booking from './Booking';
 import Header from './Header';
 import Restaurants from './Restaurants';
 import Dietary from './Dietary';
+import Adminpage from './Adminpage';
 import "./styles/App.css";
 
 const API_URL = "https://41cpd3sfbg.execute-api.eu-west-2.amazonaws.com/dev/";
@@ -108,6 +109,7 @@ class App extends React.Component {
         <Restaurants
           restaurants={this.state.restaurants} />
         <Booking />
+        <Adminpage />
       </div>
     );
   }

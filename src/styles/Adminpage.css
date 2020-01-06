@@ -1,0 +1,11 @@
+h1 {
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+    margin: 15px auto;
+}
+
+.btn {
+    width: 25%;
+}

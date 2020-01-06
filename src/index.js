@@ -8,6 +8,7 @@ import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import Booking from './Booking';
 import Restaurants from './Restaurants';
+import Adminpage from './Adminpage';
 
 const routing = (
   <Router>
@@ -16,6 +17,7 @@ const routing = (
       <Route exact path="/" component={App} />
       <Route path="/Booking" component={Booking} />
       <Route path="/Restaurants" component={Restaurants} />
+      <Route path="/Adminpage" component={Adminpage} />
     </div>
   </Router>
 )

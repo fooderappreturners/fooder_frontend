@@ -11,7 +11,7 @@ export default (props) => {
                     <img className="restPic" src={img} alt={name} />
                 </div>
             </div>
-            <div className="col-6">
+            <div className="col-6 blurb">
                 <h1>{name}</h1>
                 <p className="desc">{description}</p>
                 <p className="address">Address: {location}</p>
@@ -23,9 +23,9 @@ export default (props) => {
                         <input type='date' />
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="exampleFormControlSelect1">Party Size</label>
-                    <select class="form-control" id="exampleFormControlSelect1">
+                <div className="col form-group">
+                    <label for="exampleFormControlSelect1"></label>
+                    <select className="form-control" id="exampleFormControlSelect1">
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
@@ -35,7 +35,7 @@ export default (props) => {
                     </select>
                     {/* //throw error when 6+ is required to state you need to call the restaurant to book*/}
                 </div>
-                <button type="button" class="btn btn-primary">Book</button>
+                <button type="button" class="btn btn-primary btn-md">Book</button>
             </div>
         </div>
     )
