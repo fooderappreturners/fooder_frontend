@@ -26,5 +26,9 @@ img {
   float:left;
   padding:15px 0;
   border-radius: 15px;
+}
 
+.logo {
+  border-radius: 0px;
+  width: 300px;
 }
