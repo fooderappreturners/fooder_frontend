@@ -1,6 +1,5 @@
 .restaurant {
     background-color: #C09F80;
-    
     margin: 60px auto;
     float:left;
     padding: 15px 0;
@@ -35,11 +34,13 @@ h1 {
     width: 300px;
     height: 300px;
 }
+
 .address{
     float: left;
     font-size: small;
 }
-.datebook {
+
+#datebook {
     margin-left: 400px;
     display: block;
     column-count: 3;
@@ -48,9 +49,13 @@ h1 {
     column-gap: 40px;
 }
 
-.blurb {
+#blurb {
     width: 300px;
     height: 200px;
     content: 10px;
+}
+
+#book {
+    width: 50%;
 }
 

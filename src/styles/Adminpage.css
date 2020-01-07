@@ -7,5 +7,18 @@ h1 {
 }
 
 .btn {
-    width: 25%;
+    width: 15%;
+}
+
+.home {
+    width: 15%;
+    float: left;
+    background-color: #76323F;
+    border-color : #242220;
+    font-family: #FFF;
+    margin-left: 20px;
+}
+
+.logo {
+    margin-right: 200px;
 }

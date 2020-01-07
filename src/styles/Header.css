@@ -13,3 +13,17 @@ button {
     width: 25%;
     align-self: center;
 }
+
+.member {
+    width: 10%;
+    float: right;
+    background-color: pink;
+    border-color:white;
+    margin-right: 20px;
+    background: #c9753d;
+    color: white;
+}
+
+.logo {
+    margin-left: 60px;
+}

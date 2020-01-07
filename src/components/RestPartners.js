@@ -11,13 +11,13 @@ export default (props) => {
                     <img className="restPic" src={img} alt={name} />
                 </div>
             </div>
-            <div className="col-6 blurb">
+            <div className="col-6" id="blurb">
                 <h1>{name}</h1>
                 <p className="desc">{description}</p>
                 <p className="address">Address: {location}</p>
                 <a className="number" href={`tel:${phoneNumber}`} title={`Call us on: ${phoneNumber}`}>Tel: {phoneNumber}</a>
             </div>
-            <div className="row datebook">
+            <div className="row" id="datebook">
                 <div className="col">
                     <div className="form-group mx-sm-3 mb-2">
                         <input type='date' />
@@ -35,7 +35,7 @@ export default (props) => {
                     </select>
                     {/* //throw error when 6+ is required to state you need to call the restaurant to book*/}
                 </div>
-                <button type="button" class="btn btn-primary btn-md">Book</button>
+                <button type="button" className="book btn btn-primary">Book</button>
             </div>
         </div>
     )
