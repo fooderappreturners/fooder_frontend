@@ -1,13 +1,15 @@
 .restaurant {
-    background-color: #e6a157;
-    border-color: #e6a157;
+    background-color: #C09F80;
+    
     margin: 60px auto;
     float:left;
     padding: 15px 0;
     border-radius: 35px;
+    border-color:black;
 }
 h1 {
-    font-size: large;
+    font-size: xx-large;
+    font-family: sans-serif;
     font-weight: bold;
     text-align: center;
     padding: 15px 0;
@@ -18,7 +20,7 @@ h1 {
     float: left;
 }
 .number {
-    color: #c9753d;
+    color: #111010;
     float: right;
 }
 .diningPlacesCol {
@@ -39,4 +41,5 @@ h1 {
 }
 .datebook {
     float: right;
+    
 }
