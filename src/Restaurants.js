@@ -4,8 +4,8 @@ import restaurant2 from './images/restaurant2.png';
 import restaurant3 from './images/restaurant3.png';
 import restaurant4 from './images/restaurant4.png';
 import restaurant5 from './images/restaurant5.png';
-import './styles/Restaurants.css';
 import RestPartners from './components/RestPartners';
+import './styles/Restaurants.css';
 class Restaurants extends React.Component {
     state = {
         restaurants: [],

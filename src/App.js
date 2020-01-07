@@ -72,34 +72,6 @@ class App extends React.Component {
         console.log("Error creating task", err);
       })
   };
-  //get all bookings already in system
-  bookings = () => {
-    axios.get(`${API_URL}bookings`)
-      .then((response) => {
-        const bookings = response.data;
-        this.setState({
-          bookings: bookings
-        });
-      })
-      .catch((err) => {
-        console.log("Error getting task data", err);
-      });
-  }
-  //delete booking 
-  deleteTask = id => {
-    axios.delete(`${API_URL}deleteBooking` + id)
-      .then((response) => {
-        const bookingConfirmations = this.state.bookings.filter(task => {
-          return task.taskId !== id
-        });
-        this.setState({
-          bookings: bookingConfirmations
-        });
-      })
-      .catch((err) => {
-        console.log("Error deleting task", err);
-      })
-  }
   render() {
     return (
       <div>
@@ -110,7 +82,6 @@ class App extends React.Component {
         <Restaurants
           restaurants={this.state.restaurants} />
         <Booking />
-        <Adminpage />
       </div>
     );
   }
