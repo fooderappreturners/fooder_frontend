@@ -12,14 +12,6 @@ class Live extends React.Component {
     render() {
         return (
             <div className="container">
-                {/* <div className="row">
-                    {this.props.bookings.map((bookings) => {
-                        return (
-                            <div table={bookings}>
-                            </div>
-                        )
-                    })}
-                </div> */}
             </div>
         )
     };
