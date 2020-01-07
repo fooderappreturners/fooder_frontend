@@ -1,5 +1,6 @@
 .dietary-checkbox {
     text-align: center;
+    /* border:1px solid #black; */
 }
 
 .dietary-checkbox input {
@@ -9,14 +10,17 @@
 }
 
 .dietary-checkbox input:checked + label {
-    background: #c9753d;
+    background: #565656;
     filter: none;
     color: white;
+    border-color: black;
+    padding:6px;
 }
 
 .dietary-checkbox label {
+    background:565656;
     cursor: pointer;
     padding: 15px 0;
     border-radius: 15px;
-    border: 1px solid #c9753d;
+    border: 1px solid black;
 }
