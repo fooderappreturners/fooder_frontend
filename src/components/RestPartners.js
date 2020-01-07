@@ -11,7 +11,7 @@ export default (props) => {
                     <img className="restPic" src={img} alt={name} />
                 </div>
             </div>
-            <div className="col-6">
+            <div className="col-6 blurb">
                 <h1>{name}</h1>
                 <p className="desc">{description}</p>
                 <p className="address">Address: {location}</p>
@@ -36,6 +36,7 @@ export default (props) => {
                     </div>
                     <button type="button" className="btn btn-primary">Book</button>
                 </div>
+
             </div>
         </div>
     )
