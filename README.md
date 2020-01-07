@@ -1,4 +1,4 @@
-# Fooder Application - Frontend
+# Fooder Application - Frontend :fried_shrimp::corn::banana::tomato:
 This is the front end of a Restaurant finder Application, built as a collaborative final project of the [Tech Returners](https://www.techreturners.com/) Your Journey Into Tech course. 
 
 It integrates with a backend, available here : 
