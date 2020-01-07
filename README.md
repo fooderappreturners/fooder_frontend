@@ -30,14 +30,14 @@ The application makes use of [Font Awesome](https://www.npmjs.com/package/font-a
 Node.js must be installed if not already.
 
 Clone the application and install dependencies:
-###### npm install
+> npm install
 
 To start the application:
-###### npm start
+> npm start
 
 The application will then be accessible at:
 
-###### http://localhost:3000
+> http://localhost:3000
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
