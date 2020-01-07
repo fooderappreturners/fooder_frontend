@@ -15,6 +15,7 @@ class App extends React.Component {
     dietaryOptions: [],
     restaurants: [],
     bookings: [],
+
   };
   componentDidMount() {
     axios.get(`${API_URL}dietaryOptions`)
@@ -102,7 +103,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header title="Member Area" />
         <Dietary
           dietaryOptions={this.state.dietaryOptions}
           filterRestaurantsFunc={this.filterRestaurants} />

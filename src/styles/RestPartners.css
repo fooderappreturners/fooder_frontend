@@ -1,7 +1,7 @@
 .restaurant {
     background-color: #e6a157;
     border-color: #e6a157;
-    margin: 60px auto;
+    margin: 40px auto;
     float:left;
     padding: 15px 0;
     border-radius: 35px;
@@ -31,15 +31,15 @@ h1 {
 } 
 .restPic {
     object-fit: cover;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
 }
 .address{
     float: left;
     font-size: small;
 }
 .datebook {
-    margin-left: 300px;
+    margin-left: 400px;
     display: block;
     column-count: 3;
     float: right;
@@ -53,6 +53,3 @@ h1 {
     content: 10px;
 }
 
-.btn .btn-primary {
-    width: 75%;
-}

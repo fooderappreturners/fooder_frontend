@@ -10,9 +10,10 @@ render() {
        <div>
          <h1>Administration Page</h1>
 
-         <p><button onclick="myFunction()" type="button" class="btn btn-primary btn-md">Amend booking</button></p>
-
-       </div>
+         <p><button type="button" class="btn btn-primary btn-md">Amend booking</button></p>
+         <p><button type="button" class="btn btn-primary btn-md">Delete booking</button></p>
+         
+     </div>
     )
   }
 }

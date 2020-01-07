@@ -18,6 +18,7 @@ const routing = (
       <Route path="/Booking" component={Booking} />
       <Route path="/Restaurants" component={Restaurants} />
       <Route path="/Adminpage" component={Adminpage} />
+
     </div>
   </Router>
 )
