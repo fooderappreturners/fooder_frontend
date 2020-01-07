@@ -75,7 +75,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header title="Member Area" />
+        <Header />
         <Dietary
           dietaryOptions={this.state.dietaryOptions}
           filterRestaurantsFunc={this.filterRestaurants} />
