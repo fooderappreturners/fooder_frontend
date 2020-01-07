@@ -1,6 +1,5 @@
 import React from 'react';
-import title from './App';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './styles/Header.css';
 
 
