@@ -9,3 +9,13 @@ h1 {
 .btn {
     width: 25%;
 }
+
+.home {
+    width: 25%;
+    float: right;
+    background-color: #e6a157;
+    border-color: #e6a157;
+    color: #FFF;
+    border-radius: 35px;
+    margin-right: 20px;
+}
