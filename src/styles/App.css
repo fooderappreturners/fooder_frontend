@@ -1,7 +1,9 @@
 #mainHeading {
+
     text-align: center;
     text-decoration: underline;
     font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
   }
 
 p {
@@ -9,9 +11,12 @@ p {
 }
 
 body {
-  background-color: #9dab86;
+  background-color: #D7CEC7;
   font-family: 'Open Sans', sans-serif;
   color: rgb(34, 32, 32);
+  margin-block-end: #242220;
+  margin-block-start: #242220;
+  padding:15px 0;
 }
 
 img {
@@ -20,11 +25,15 @@ img {
 }
 
 #restaurantchoice {
-  background-color: #e6a157;
-  border-color: #e6a157;
+  background-color: #76323F;
+  border-color : #242220;
+  padding: 20px;
   margin: 30px auto;
   float:left;
-  padding:15px 0;
-  border-radius: 15px;
+  padding:30px 0;
+  border-radius: 30px;
+  box-shadow: #9099A2;
 
 }
+
+
