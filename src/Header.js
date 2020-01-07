@@ -11,8 +11,8 @@ class Header extends React.Component {
       <div>
         <header>
         
-              <Link to="/Adminpage">Members Area</Link>
-          
+          <button className="member btn btn-secondary"><Link to="/Adminpage">Members Area</Link></button>
+          <br />
   
           <h1 id="mainHeading">
             <img className="logo" src={fooderlogo} alt="Fooder" />
