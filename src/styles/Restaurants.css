@@ -2,14 +2,14 @@
     text-align: center;
   }
 
-  button {
+button {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 50%;
     align-self: center;
 }
 
-  p {
+p {
     text-align: center;
   }
