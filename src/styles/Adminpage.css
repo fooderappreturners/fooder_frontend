@@ -2,10 +2,15 @@ h1 {
     font-size: large;
     font-weight: bold;
     text-align: center;
-    padding: 15px 0;
-    margin: 15px auto;
+    padding: 0;
+    margin: 0;
 }
 
-.btn {
-    width: 25%;
+.home {
+    float: right;
+    background-color: #e6a157;
+    border-color: #e6a157;
+    color: #FFF;
+    border-radius: 35px;
+    margin-right: 20px;
 }

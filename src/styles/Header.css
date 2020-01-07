@@ -13,3 +13,13 @@ button {
     width: 25%;
     align-self: center;
 }
+.member {
+    width: 10%;
+    float: right;
+    background-color: #e6a157;
+    border-color: #e6a157;
+    border-radius: 15px;
+    margin-right: 20px;
+    background: #c9753d;
+    color: white;
+}
