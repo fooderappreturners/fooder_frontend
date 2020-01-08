@@ -83,7 +83,6 @@ class Adminpage extends React.Component {
                   </tr>
                 )
               })}
-
             </tbody>
           </table>
         </div>
