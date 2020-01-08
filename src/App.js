@@ -52,12 +52,12 @@ class App extends React.Component {
       });
   }
   //add a new booking 
-  addNewBooking = () => {
+  addNewBooking = (bookingName, bookingDate, bookingParty) => {
     const bookingsCopy = this.state.bookings.slice();
     const newBooking = {
-      name: "",
-      date: '',
-      number: ''
+      name: bookingName,
+      date: bookingDate,
+      number: bookingParty
     };
     axios.post(`${API_URL}addBooking`, newBooking)
       .then((response) => {
@@ -72,6 +72,7 @@ class App extends React.Component {
         console.log("Error creating task", err);
       })
   };
+
   render() {
     return (
       <div>

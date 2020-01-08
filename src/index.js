@@ -13,7 +13,6 @@ import Admin from "./Adminpage";
 const routing = (
   <Router>
     <div>
-      {/* need to add a link to the dietary needs and submit buttons. */}
       <Route exact path="/" component={App} />
       <Route path="/Adminpage" component={Admin} />
       <Route path="/Booking" component={Booking} />

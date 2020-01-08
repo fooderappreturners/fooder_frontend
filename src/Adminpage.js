@@ -1,6 +1,5 @@
 import React from 'react';
 import axios from "axios";
-import Live from './Adminbookings'
 import moment from 'moment';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import Modal from './components/Modal';
@@ -33,14 +32,12 @@ class Adminpage extends React.Component {
         console.log("Error amending booking", err);
       })
   }
-  // axios update booking function
   deleteBooking(id) {
     axios.delete(`${API_URL}deleteBooking/${id}`)
       .then(() => this.fetchBookings())
       .catch((err) => {
         console.log("Error deleting booking", err);
       })
-
   }
 
   render() {
