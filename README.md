@@ -1,10 +1,10 @@
-# Fooder Application - Frontend :fried_shrimp::corn::banana::tomato:
+# Fooder Application - Frontend :fried_shrimp::corn::banana::tomato::broccoli::fish:
 This is the front end of a Restaurant finder Application, built as a collaborative final project of the [Tech Returners](https://www.techreturners.com/) Your Journey Into Tech course. 
 
 It integrates with a backend, available here : 
 https://github.com/fooderappreturners/fooder_backend
 
-The hosted version of the application is available here: https://fooderappreturners.github.io/finder/
+The hosted version of the application is available here: https://fooderappreturners.github.io
 
 ## The Application has been designed to:
 Provide a list of recommended restaurants in Manchester based on dietary needs. For example Vegan, Halal, Gluten-free etc.. 
