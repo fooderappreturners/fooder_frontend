@@ -13,7 +13,7 @@ class App extends React.Component {
     dietaryOptions: [],
     restaurants: [],
     bookings: [],
-    bookingConfirmed: false
+    bookingDate: null
   };
   componentDidMount() {
     axios.get(`${API_URL}dietaryOptions`)
@@ -50,14 +50,15 @@ class App extends React.Component {
       });
   }
   //add a new booking 
-  addNewBooking = (bookingName, bookingDate, bookingParty, restaurantId) => {
+  addNewBooking = (bookingName, bookingDate, bookingParty, restaurantId, restaurantName) => {
     const bookingsCopy = this.state.bookings.slice();
     const newBooking = {
       id: "2",
       name: bookingName,
       date: bookingDate,
       number: bookingParty,
-      restaurant_id: restaurantId
+      restaurantId: restaurantId,
+      restaurant_name: restaurantName
     };
 
     axios.post(`${API_URL}addBooking`, newBooking)
@@ -67,7 +68,9 @@ class App extends React.Component {
         console.log(response)
         this.setState({
           bookings: bookingsCopy,
-          bookingConfirmed: true
+          bookingConfirmed: true,
+          bookingDate: bookingDate,
+          restaurantName: restaurantName
         })
 
       })
@@ -80,16 +83,20 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <Dietary
-          dietaryOptions={this.state.dietaryOptions}
-          filterRestaurantsFunc={this.filterRestaurants} />
-        <Restaurants
-          restaurants={this.state.restaurants}
-          addNewBookingFunc={this.addNewBooking}
-        />
-        {this.state.bookingConfirmed &&
-          <Booking />
-        }
+        {!this.state.bookingConfirmed ? (
+          <div>
+            <Dietary
+              dietaryOptions={this.state.dietaryOptions}
+              filterRestaurantsFunc={this.filterRestaurants} />
+            <Restaurants
+              restaurants={this.state.restaurants}
+              addNewBookingFunc={this.addNewBooking}
+            />
+          </div>
+        ) : <Booking
+            bookingDate={this.state.bookingDate}
+            restaurantName={this.state.restaurantName}
+          />}
       </div>
     );
   }

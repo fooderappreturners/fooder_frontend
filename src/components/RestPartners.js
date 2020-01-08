@@ -30,7 +30,7 @@ class RestPartners extends React.Component {
     handleClick = (event) => {
         event.preventDefault();
         console.log(this.state.newName, this.state.newDate, this.state.newNumber, this.props.restaurant.id)
-        this.props.addNewBookingFunc(this.state.newName, this.state.newDate, this.state.newNumber, this.props.restaurant.id);
+        this.props.addNewBookingFunc(this.state.newName, this.state.newDate, this.state.newNumber, this.props.restaurant.id, this.props.restaurant.name);
     }
 
     render() {

@@ -5,31 +5,37 @@ import './styles/Booking.css';
 class Booking extends React.Component {
 
     render() {
-        return (
-            <div className="container">
-                <div className="col-lg-6">
-                    <fieldset className="border">
-                    <legend className="text-centre">Booking Confirmation</legend>
-                            <img className="menu" src={menu} width="200px" height="80" alt="menu" />
-                        <br />
 
-                        <p id="innerPara" type="text">
+        const paraStyle = {
+            textAlign: "left"
+        };
+        const imageStyle = {
+            textAlign: "right"
+        }
+        return (
+
+            <div className="container">
+                <div className="row">
+                    <div className="col-4" style={imageStyle} >
+                        <img className="menu" src={menu} alt="menu" />
+                    </div>
+                    <div className="col-8">
+                        <legend className="text-centre">Booking Confirmation</legend>
+                        <p style={paraStyle}>
                             Your Booking has now been confirmed:
-                        <br />
-                            Restaurant:
-                        <br />
-                            Date:
-                        <br />
-                            Time:
-                        <br />
+                            <br />
+                            Restaurant: {this.props.restaurantName}
+                            <br />
+                            Date: {this.props.bookingDate}
+                            <br />
                             If you need to Cancel or Amend your booking for any reason please contact
                             us on 0161 222 3344
 
-                        </p>
-                    
-                    </fieldset>
+                            </p>
+
+                    </div>
                 </div>
-            </div>
+            </div >
         );
     }
 }
