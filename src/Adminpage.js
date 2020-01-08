@@ -3,12 +3,8 @@ import axios from "axios";
 import Live from './Adminbookings'
 import moment from 'moment';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
-<<<<<<< HEAD
 import Modal from './components/Modal';
-import adminpage from './images/adminpage.png'
-=======
-import fooderlogo from './images/fooderlogo.png';
->>>>>>> b5468ccd524a577590157628bcdfe33c4364e178
+import adminpage from './images/adminlogo.png'
 import './styles/Adminpage.css';
 
 const API_URL = "https://41cpd3sfbg.execute-api.eu-west-2.amazonaws.com/dev/";
