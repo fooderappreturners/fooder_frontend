@@ -54,9 +54,8 @@ class Add extends React.Component {
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
-                            <option>6+</option>
+                            <option>6</option>
                         </select>
-                        {/* //throw error when 6+ is required to state you need to call the restaurant to book*/}
                     </div>
                     <button type="button" onClick={this.handleClick} className="book btn btn-primary">Book</button>
                 </div>
