@@ -6,7 +6,6 @@ h1 {
     margin: 0;
 }
 
-<<<<<<< HEAD
 .home {
     float: right;
     background-color: #e6a157;
@@ -14,21 +13,4 @@ h1 {
     color: #FFF;
     border-radius: 35px;
     margin-right: 20px;
-=======
-.btn {
-    width: 15%;
-}
-
-.home {
-    width: 15%;
-    float: left;
-    background-color: #76323F;
-    border-color : #242220;
-    font-family: #FFF;
-    margin-left: 20px;
-}
-
-.logo {
-    margin-right: 200px;
->>>>>>> b5468ccd524a577590157628bcdfe33c4364e178
 }
