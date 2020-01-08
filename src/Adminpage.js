@@ -6,7 +6,7 @@ import Modal from './components/Modal';
 import adminpage from './images/adminlogo.png'
 import './styles/Adminpage.css';
 
-const API_URL = "https://fooderappreturners.github.io/fooder_frontend/";
+const API_URL = "https://41cpd3sfbg.execute-api.eu-west-2.amazonaws.com/dev/";
 class Adminpage extends React.Component {
   state = {
     bookings: []
