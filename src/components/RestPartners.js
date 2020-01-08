@@ -19,7 +19,7 @@ export default (props) => {
             </div>
             <div className="row" id="datebook">
                 <div className="col">
-                    <input type="text" class="form-control" placeholder="First name" value={this.state.newName} onChange={this.state.updateNewBooking}></input>
+                    <input type="text" class="form-control" placeholder="First name"></input>
                     <div className="form-group mx-sm-3 mb-2">
                         <input type='date' />
                     </div>
