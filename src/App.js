@@ -8,7 +8,7 @@ import Dietary from './Dietary';
 import Adminpage from './Adminpage';
 import "./styles/App.css";
 
-const API_URL = "https://41cpd3sfbg.execute-api.eu-west-2.amazonaws.com/dev/";
+const API_URL = "https://fooderappreturners.github.io/fooder_frontend/";
 
 class App extends React.Component {
   state = {
