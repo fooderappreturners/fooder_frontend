@@ -60,3 +60,12 @@ h1 {
     width: 50%;
 }
 
+body {
+    background-color: #D7CEC7;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(34, 32, 32);
+    margin-block-end: #242220;
+    margin-block-start: #242220;
+    padding:15px 0;
+  }
+

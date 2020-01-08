@@ -1,11 +1,9 @@
 import React from 'react';
 import axios from "axios";
-import moment from "moment";
 import Booking from './Booking';
 import Header from './Header';
 import Restaurants from './Restaurants';
 import Dietary from './Dietary';
-import Adminpage from './Adminpage';
 import "./styles/App.css";
 
 const API_URL = "https://41cpd3sfbg.execute-api.eu-west-2.amazonaws.com/dev/";
@@ -15,7 +13,6 @@ class App extends React.Component {
     dietaryOptions: [],
     restaurants: [],
     bookings: [],
-
   };
   componentDidMount() {
     axios.get(`${API_URL}dietaryOptions`)
@@ -81,7 +78,9 @@ class App extends React.Component {
           dietaryOptions={this.state.dietaryOptions}
           filterRestaurantsFunc={this.filterRestaurants} />
         <Restaurants
-          restaurants={this.state.restaurants} />
+          restaurants={this.state.restaurants}
+        // addNewBookingFunc={this.addNewBooking} 
+        />
         <Booking />
       </div>
     );
