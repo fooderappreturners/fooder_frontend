@@ -3,8 +3,12 @@ import axios from "axios";
 import Live from './Adminbookings'
 import moment from 'moment';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+<<<<<<< HEAD
 import Modal from './components/Modal';
 import adminpage from './images/adminpage.png'
+=======
+import fooderlogo from './images/fooderlogo.png';
+>>>>>>> b5468ccd524a577590157628bcdfe33c4364e178
 import './styles/Adminpage.css';
 
 const API_URL = "https://41cpd3sfbg.execute-api.eu-west-2.amazonaws.com/dev/";
@@ -45,6 +49,7 @@ class Adminpage extends React.Component {
 
   render() {
     return (
+<<<<<<< HEAD
       <div className="container">
         <div className="row">
           <div className="col-6"><h1>Administration Page</h1></div>
@@ -93,6 +98,19 @@ class Adminpage extends React.Component {
 
 
 
+=======
+      <div>
+
+          <button className="home btn btn-primary"><Link to="/">Home</Link></button>
+          <h1 id="mainHeading">
+            <img className="logo" src={fooderlogo} alt="Fooder" />
+          </h1>
+
+          <h1>Administration Page</h1>
+        
+        <p><button type="button" className="btn btn-primary btn-md">Amend booking</button></p>
+        <p><button type="button" className="btn btn-primary btn-md">Delete booking</button></p>
+>>>>>>> b5468ccd524a577590157628bcdfe33c4364e178
       </div>
     )
   }

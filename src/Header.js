@@ -10,7 +10,14 @@ class Header extends React.Component {
     return (
       <div>
         <header>
+<<<<<<< HEAD
           <button className="member btn btn-secondary"><Link to="/Adminpage">Members Area</Link></button><br></br>
+=======
+        
+          <button className="member btn"><Link to="/Adminpage">Members Area</Link></button>
+          <br />
+  
+>>>>>>> b5468ccd524a577590157628bcdfe33c4364e178
           <h1 id="mainHeading">
             <img className="logo" src={fooderlogo} alt="Fooder" />
           </h1>

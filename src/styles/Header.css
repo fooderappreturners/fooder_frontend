@@ -13,6 +13,7 @@ button {
     width: 25%;
     align-self: center;
 }
+<<<<<<< HEAD
 .member {
     width: 10%;
     float: right;
@@ -22,4 +23,19 @@ button {
     margin-right: 20px;
     background: #c9753d;
     color: white;
+=======
+
+.member {
+    width: 10%;
+    float: right;
+    background-color: pink;
+    border-color:white;
+    margin-right: 20px;
+    background: #c9753d;
+    color: white;
+}
+
+.logo {
+    margin-left: 60px;
+>>>>>>> b5468ccd524a577590157628bcdfe33c4364e178
 }
