@@ -13,6 +13,7 @@ class App extends React.Component {
     dietaryOptions: [],
     restaurants: [],
     bookings: [],
+    bookingConfirmed: false
   };
   componentDidMount() {
     axios.get(`${API_URL}dietaryOptions`)
@@ -49,21 +50,26 @@ class App extends React.Component {
       });
   }
   //add a new booking 
-  addNewBooking = (bookingName, bookingDate, bookingParty) => {
+  addNewBooking = (bookingName, bookingDate, bookingParty, restaurantId) => {
     const bookingsCopy = this.state.bookings.slice();
     const newBooking = {
+      id: "2",
       name: bookingName,
       date: bookingDate,
-      number: bookingParty
+      number: bookingParty,
+      restaurant_id: restaurantId
     };
+
     axios.post(`${API_URL}addBooking`, newBooking)
       .then((response) => {
         const bookingFromDB = response.data;
         bookingsCopy.push(bookingFromDB)
         console.log(response)
         this.setState({
-          bookings: bookingsCopy
+          bookings: bookingsCopy,
+          bookingConfirmed: true
         })
+
       })
       .catch((err) => {
         console.log("Error creating task", err);
@@ -79,9 +85,11 @@ class App extends React.Component {
           filterRestaurantsFunc={this.filterRestaurants} />
         <Restaurants
           restaurants={this.state.restaurants}
-        // addNewBookingFunc={this.addNewBooking} 
+          addNewBookingFunc={this.addNewBooking}
         />
-        <Booking />
+        {this.state.bookingConfirmed &&
+          <Booking />
+        }
       </div>
     );
   }

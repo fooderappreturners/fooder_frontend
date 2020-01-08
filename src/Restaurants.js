@@ -39,7 +39,8 @@ class Restaurants extends React.Component {
                             <div key={restaurant.id}>
                                 <RestPartners
                                     img={this.state.images[restaurant.id]}
-                                    restaurant={restaurant} />
+                                    restaurant={restaurant}
+                                    addNewBookingFunc={this.props.addNewBookingFunc} />
                             </div>
                         )
                     })}
