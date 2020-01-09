@@ -16,6 +16,7 @@ h1 {
     margin: 15px auto;
 }
 .desc {
+    margin-top: 50px;
     font-size: small;
     float: left;
 }
@@ -54,6 +55,7 @@ h1 {
     width: 300px;
     height: 200px;
     content: 10px;
+    margin-bottom: 100px;
 }
 
 #book {
@@ -67,5 +69,10 @@ body {
     margin-block-end: #242220;
     margin-block-start: #242220;
     padding:15px 0;
+    margin-bottom: 70px;
+  }
+
+  .col-12 {
+      margin-bottom: 100px;
   }
 
