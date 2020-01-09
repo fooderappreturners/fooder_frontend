@@ -8,21 +8,23 @@
 }
 
 h1 {
-    font-size: xx-large;
+    font-size: 25px;
     font-family: sans-serif;
     font-weight: bold;
     text-align: center;
-    padding: 15px 0;
-    margin: 15px auto;
+    padding: 15px 15px 15px 15px;
+    margin-bottom: 30px;
 }
 .desc {
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: small;
     float: left;
+    margin-left: 10px;
 }
 .number {
     color: #111010;
     float: right;
+    margin-right: 50px;
 }
 .diningPlacesCol {
     width: 300px;
@@ -40,6 +42,11 @@ h1 {
 .address{
     float: left;
     font-size: small;
+    margin-left: 50px;
+}
+
+.party {
+    margin-left: 15px;
 }
 
 #datebook {
@@ -76,3 +83,19 @@ body {
       margin-bottom: 100px;
   }
 
+  .order {
+      margin-left: 10px;
+      margin-right: 0px;
+  }
+
+  .date {
+      margin-right: 5px;
+  }
+
+  .party {
+      margin-right: 0px;
+  }
+
+  .books {
+      margin: 0px auto;
+  }

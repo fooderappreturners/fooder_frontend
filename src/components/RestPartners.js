@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../styles/RestPartners.css'
 
 class RestPartners extends React.Component {
@@ -52,14 +53,14 @@ class RestPartners extends React.Component {
                             <a className="number" href={`tel:${phoneNumber}`} title={`Call us on: ${phoneNumber}`}>Tel: {phoneNumber}</a>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-3">
+                    <div className="order row">
+                        <div className="name col-3">
                             <input type="text" className="form-control" placeholder="First name" value={this.state.newName} onChange={this.updateName} />
                         </div>
-                        <div className="col-3">
+                        <div className="date col-3">
                             <input type='date' value={this.state.newDate} onChange={this.updateDate} />
                         </div>
-                        <div className="col-3">
+                        <div className="party col-3">
                             <select className="form-control" id="exampleFormControlSelect1" value={this.state.newNumber} onChange={this.updateNumber}>
                                 <option>1</option>
                                 <option>2</option>
@@ -69,7 +70,7 @@ class RestPartners extends React.Component {
                                 <option>6</option>
                             </select>
                         </div>
-                        <div className="col-3">
+                        <div className="books col-3">
                             <button type="button" onClick={this.handleClick} className="book btn btn-primary">Book</button>
                         </div>
                     </div>
